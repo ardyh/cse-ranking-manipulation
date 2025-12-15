@@ -4,6 +4,11 @@ out_text/
 dataset/
 plots/
 original_plots/
+sandbox/
+plots_original/
+plots_replication/
+out_original/
+out_replication/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -84,6 +89,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+**.ipynb
 
 # IPython
 profile_default/

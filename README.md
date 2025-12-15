@@ -1,5 +1,11 @@
 # Ranking Manipulation for Conversational Search Engines
 
+```
+Replicated by: Ardysatrio Haroen and Abhinav Vadhera
+
+We added our ablation notes under the section: Usage (Ablations). The rest of the README was written by the original authors. 
+```
+
 This repository reproduces the results for the paper [***Ranking Manipulation for Conversational Search Engines***](https://arxiv.org/abs/2406.03589), by Samuel Pfrommer, Yatong Bai, Tanmay Gautam, and Somayeh Sojoudi.
 
 The contents include the code implementation of the proposed ranking manipulation algorithm, the pickled output (`out`), raw-text output (`out_text`), dataset (`dataset`), and plots (`plots`). Unzip the respective files to recover the directories.
@@ -29,7 +35,7 @@ We then present a tree-of-attacks-based jailbreaking technique which reliably pr
 
 Please find a more detailed description of our dataset in the associated [dataset card](https://github.com/spfrommer/cse-ranking-manipulation/blob/main/datasheet.md).
 
-## Usage
+## Usage (Authors' Original Work)
 
 1. Clone this repository and unzip relevant `.zip` files. 
 Note that since a copy of the dataset and experimental results are included in this repo, **the repository size is thus rather large (~100Mb as zip files, ~700Mb after unzipping).**
@@ -49,6 +55,60 @@ PERPLEXITY_API_KEY='...'
 bash scripts/run.sh
 ```
 
+## Usage (Ablations)
+For our ablations, we utilized Python 3.10 and Ananconda+pip for package management. Therefore we added the requirements.txt file
+
+## Usage (Ablations)
+For our ablations, we utilized Python 3.10 and Anaconda+pip for package management. Therefore we added the requirements.txt file.
+
+### Setup
+```
+# Create conda environment with Python 3.10
+conda create -n rank_manipulation python=3.10
+```
+
+```
+# Activate the environment
+conda activate rank_manipulation
+```
+
+```
+# Install dependencies using pip
+pip install -r requirements.txt
+```
+```
+# Configure API Keys on the terminal instance. 
+# This needs to be done in the terminal where 
+# `scripts/run.sh` is going to be executed
+export OPENAI_API_KEY='your-openai-key'
+export TOGETHER_API_KEY='your-together-key'
+export PERPLEXITY_API_KEY='your-perplexity-key'
+```
+
+### The Commands We Executed
+Since we only experimented on a subset of the models, we didn't run all of the commands under `scripts/run.sh`.
+
+First, we made sure there is no `out/` directory within the codebase (if we have unzipped `out.zip`). Since the script will use the all the `.npy` files within `out/` as the experiment result instead of making the API calls and redoing the experiment.
+
+The commands relevant to our experiments:
+```
+# Recording the natural 'tendencies' of the target model
+python natural.py --original $global --target-model gpt-3.5
+python natural.py --original $global --target-model llama3-70b
+
+# Generating the different permutations of the document contents and testing it against the target model
+python natural.py --rewritten $global --target-model gpt-3.5
+python natural.py --rewritten $global --target-model llama3-70b
+
+# Conducting the prompt injection and recording the results
+python adversarial.py $global --target-model gpt-3.5
+python adversarial.py $global --target-model llama3-70b
+```
+
+### Ablation Scripts
+For our main ablation as explained within our report, we store our scripts within the `ablation/` directory. Mainly within `ablation/ablation.ipynb`
+
+The list of github URLs which hosts the original and injected pages for our ablation could be seen in `ablation/json/products_hosted.json`
 
 ## Attribution
 This repository is based on the [minimal implementation](https://github.com/dreadnode/parley) of the "Tree of Attacks (TAP): Jailbreaking Black-Box LLMs Automatically" Research by Robust Intelligence.
