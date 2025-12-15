@@ -1,10 +1,10 @@
 # Ranking Manipulation for Conversational Search Engines
 
-```
 Replicated by: Ardysatrio Haroen and Abhinav Vadhera
 
 We added our ablation notes under the section: Usage (Ablations). The rest of the README was written by the original authors. 
-```
+
+_____________
 
 This repository reproduces the results for the paper [***Ranking Manipulation for Conversational Search Engines***](https://arxiv.org/abs/2406.03589), by Samuel Pfrommer, Yatong Bai, Tanmay Gautam, and Somayeh Sojoudi.
 
@@ -54,9 +54,6 @@ PERPLEXITY_API_KEY='...'
 ```
 bash scripts/run.sh
 ```
-
-## Usage (Ablations)
-For our ablations, we utilized Python 3.10 and Ananconda+pip for package management. Therefore we added the requirements.txt file
 
 ## Usage (Ablations)
 For our ablations, we utilized Python 3.10 and Anaconda+pip for package management. Therefore we added the requirements.txt file.
