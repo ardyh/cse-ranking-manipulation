@@ -1,0 +1,50 @@
+{
+  "total_experiments": 138,
+  "total_prompts": 552,
+  "experiments_per_category": {
+    "blender": {
+      "baseline": 7,
+      "adversarial": 7
+    },
+    "coffee maker": {
+      "baseline": 7,
+      "adversarial": 7
+    },
+    "computer monitor": {
+      "baseline": 7,
+      "adversarial": 7
+    },
+    "hair dryer": {
+      "baseline": 7,
+      "adversarial": 7
+    },
+    "laptop": {
+      "baseline": 6,
+      "adversarial": 6
+    },
+    "lipstick": {
+      "baseline": 7,
+      "adversarial": 7
+    },
+    "microwave oven": {
+      "baseline": 7,
+      "adversarial": 7
+    },
+    "shampoo": {
+      "baseline": 7,
+      "adversarial": 7
+    },
+    "tablet": {
+      "baseline": 7,
+      "adversarial": 7
+    },
+    "washing machine": {
+      "baseline": 7,
+      "adversarial": 7
+    }
+  },
+  "prompts_per_condition": {
+    "baseline": 276,
+    "adversarial": 276
+  }
+}

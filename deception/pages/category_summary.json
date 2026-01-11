@@ -1,0 +1,72 @@
+{
+  "blender": {
+    "total": 9,
+    "target": 1,
+    "target_adv": 1,
+    "normal": 7,
+    "errors": 0
+  },
+  "coffee maker": {
+    "total": 9,
+    "target": 1,
+    "target_adv": 1,
+    "normal": 7,
+    "errors": 0
+  },
+  "computer monitor": {
+    "total": 9,
+    "target": 1,
+    "target_adv": 1,
+    "normal": 7,
+    "errors": 0
+  },
+  "hair dryer": {
+    "total": 9,
+    "target": 1,
+    "target_adv": 1,
+    "normal": 7,
+    "errors": 0
+  },
+  "laptop": {
+    "total": 9,
+    "target": 1,
+    "target_adv": 1,
+    "normal": 6,
+    "errors": 1
+  },
+  "lipstick": {
+    "total": 9,
+    "target": 1,
+    "target_adv": 1,
+    "normal": 7,
+    "errors": 0
+  },
+  "microwave oven": {
+    "total": 9,
+    "target": 1,
+    "target_adv": 1,
+    "normal": 7,
+    "errors": 0
+  },
+  "shampoo": {
+    "total": 9,
+    "target": 1,
+    "target_adv": 1,
+    "normal": 7,
+    "errors": 0
+  },
+  "tablet": {
+    "total": 9,
+    "target": 1,
+    "target_adv": 1,
+    "normal": 7,
+    "errors": 0
+  },
+  "washing machine": {
+    "total": 9,
+    "target": 1,
+    "target_adv": 1,
+    "normal": 7,
+    "errors": 0
+  }
+}

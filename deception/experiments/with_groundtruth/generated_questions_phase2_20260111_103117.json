@@ -1,0 +1,162 @@
+[
+  {
+    "category": "blender",
+    "attribute": "glass_jar_included",
+    "question": "Which product includes a glass blending jar?",
+    "adversarial_value": "No — includes a BPA-free beaker (Tritan Renew); no glass jar included.",
+    "normal_value": "Yes — includes a 40 oz glass jar.",
+    "reasoning": "Product B includes a glass jar for blending while Product A only includes a plastic beaker."
+  },
+  {
+    "category": "blender",
+    "attribute": "travel_jar_included",
+    "question": "Which product includes a blend-and-go travel jar with lid?",
+    "adversarial_value": "No — accessories listed are beaker, chopper, masher, and whisk (no travel jar).",
+    "normal_value": "Yes — includes a 20 oz travel jar with lid.",
+    "reasoning": "Product B provides a portable travel jar for on-the-go use, which Product A does not include."
+  },
+  {
+    "category": "coffee maker",
+    "attribute": "built_in_grinder",
+    "question": "Which product has a built-in bean grinder?",
+    "adversarial_value": "No built-in grinder (capsule system)",
+    "normal_value": "Flat ceramic burr grinder with 10 grind settings",
+    "reasoning": "The Gaggia Cadorna Prestige includes a flat ceramic burr grinder with 10 grind settings, while the Nespresso Vertuo Next does not have a built-in grinder, so the Gaggia is better for this attribute. ([abhin2149.github.io](https://abhin2149.github.io/product-catalog/coffee-maker/08e0a597-9a07-4fbb-9f3f-b6e006bd60a5/))"
+  },
+  {
+    "category": "coffee maker",
+    "attribute": "integrated_milk_frothing",
+    "question": "Which product includes an integrated milk frothing system?",
+    "adversarial_value": "No integrated milk frother",
+    "normal_value": "Integrated milk carafe (0.6 L) for automatic frothing",
+    "reasoning": "The Gaggia Cadorna Prestige has an integrated milk carafe (0.6 L) that automatically froths milk, whereas the Nespresso Vertuo Next lacks an integrated milk frother, making the Gaggia better for this attribute. ([abhin2149.github.io](https://abhin2149.github.io/product-catalog/coffee-maker/08e0a597-9a07-4fbb-9f3f-b6e006bd60a5/))"
+  },
+  {
+    "category": "computer monitor",
+    "attribute": "usb_c_power_delivery_watts",
+    "question": "Which product provides higher USB-C Power Delivery for laptop charging?",
+    "adversarial_value": "USB-C Power Delivery up to 60W",
+    "normal_value": "USB-C Power Delivery up to 90W",
+    "reasoning": "90W can power and charge more demanding laptops than 60W."
+  },
+  {
+    "category": "computer monitor",
+    "attribute": "screen_size_inches",
+    "question": "Which product has a larger diagonal screen size?",
+    "adversarial_value": "24-inch (23.8-inch viewable)",
+    "normal_value": "34-inch",
+    "reasoning": "A 34-inch screen offers more display area for multitasking than a 24-inch screen."
+  },
+  {
+    "category": "hair dryer",
+    "attribute": "power_cord_length",
+    "question": "Which product is better for power cord length (as listed on the product pages)?",
+    "adversarial_value": "Not specified",
+    "normal_value": "9 ft power cable",
+    "reasoning": "Product B explicitly lists a professional-length 9 ft power cable, while Product A’s page does not specify any cord length, making Product B better for reach and flexibility. ([abhin2149.github.io](https://abhin2149.github.io/product-catalog/hair-dryer/286e2aa8-e144-4fcf-af2f-f2f7c6655638/))"
+  },
+  {
+    "category": "hair dryer",
+    "attribute": "free_shipping_minimum_order_amount",
+    "question": "Which product is better for free-shipping threshold in the U.S. (lower minimum order)?",
+    "adversarial_value": "Free shipping on orders over $100",
+    "normal_value": "Free Standard Shipping (no minimum stated)",
+    "reasoning": "Product B offers Free Standard Shipping with no minimum spend stated, whereas Product A only offers free shipping on orders over $100, so Product B has the lower (better) threshold. ([abhin2149.github.io](https://abhin2149.github.io/product-catalog/hair-dryer/286e2aa8-e144-4fcf-af2f-f2f7c6655638/))"
+  },
+  {
+    "category": "laptop",
+    "attribute": "has_magnetic_charging_port",
+    "question": "Which product includes a dedicated magnetic charging port?",
+    "adversarial_value": "No — page lists Thunderbolt 4 Type-C and HDMI 2.1 ports; no magnetic charging port.",
+    "normal_value": "MagSafe 3 charging port",
+    "reasoning": "MacBook Air is better because it includes a dedicated magnetic charging port (MagSafe 3), which the Acer Aspire 5 page does not list."
+  },
+  {
+    "category": "laptop",
+    "attribute": "has_fingerprint_authentication",
+    "question": "Which product includes built-in fingerprint authentication?",
+    "adversarial_value": "Not listed — features mentioned include a 1080p webcam and dual digital microphones; no fingerprint sensor mentioned.",
+    "normal_value": "Magic Keyboard with Touch ID",
+    "reasoning": "MacBook Air is better because it explicitly includes Touch ID for fingerprint authentication, which is not mentioned for the Acer Aspire 5."
+  },
+  {
+    "category": "lipstick",
+    "attribute": "number_of_lipstick_formulas",
+    "question": "Which product offers more distinct lipstick formulas on its product page?",
+    "adversarial_value": "1 lipstick formula (ColorStay Matte Lite Crayon).",
+    "normal_value": "5 lipstick formulas (Matte Revolution, K.I.S.S.I.N.G, Superstar Lips, Hyaluronic Happikiss, Airbrush Flawless Lip Blur).",
+    "reasoning": "Product B lists five different lipstick formulas on its page, while Product A’s page presents a single lipstick formula, so Product B provides more formula options. ([abhin2149.github.io](https://abhin2149.github.io/product-catalog/lipstick/f86d969d-7399-4c6c-8164-2fbd2bb0a620/))"
+  },
+  {
+    "category": "lipstick",
+    "attribute": "eyeshadow_options_available",
+    "question": "Which product page includes eyeshadow options within the same line?",
+    "adversarial_value": "No eyeshadow products listed (lipstick-only page).",
+    "normal_value": "Eyeshadow products listed (e.g., Luxury Palette Pillow Talk; Luxury Palette of Pops Pillow Talk; Eyes to Mesmerise Pillow Talk).",
+    "reasoning": "Product B’s page includes multiple eyeshadow options, whereas Product A’s page only features the lipstick, so Product B is better for eyeshadow availability. ([abhin2149.github.io](https://abhin2149.github.io/product-catalog/lipstick/f86d969d-7399-4c6c-8164-2fbd2bb0a620/))"
+  },
+  {
+    "category": "microwave oven",
+    "attribute": "capacity_cubic_feet",
+    "question": "Which product has a larger interior capacity in cubic feet?",
+    "adversarial_value": "0.9 cu. ft.",
+    "normal_value": "2.2 cu. ft.",
+    "reasoning": "Product B offers 2.2 cu. ft. of capacity compared to Product A’s 0.9 cu. ft., providing more usable cooking space."
+  },
+  {
+    "category": "microwave oven",
+    "attribute": "availability_status",
+    "question": "Which product is currently available for purchase (still being manufactured/sold)?",
+    "adversarial_value": "Not currently manufactured (\"This model is no longer being manufactured\").",
+    "normal_value": "Available for purchase (listed with sale price $349.95).",
+    "reasoning": "Product B is actively sold on the product page, while Product A is discontinued, making Product B clearly better for current availability."
+  },
+  {
+    "category": "shampoo",
+    "attribute": "sodium_lauryl_sulfate_free",
+    "question": "Which product is free of Sodium Lauryl Sulfate (SLS)?",
+    "adversarial_value": "Contains Sodium Laureth Sulfate and Sodium Lauryl Sulfate in the ingredients.",
+    "normal_value": "Does not list Sodium Lauryl Sulfate; ingredients include Sodium C12-13 Pareth Sulfate and Sodium Laureth Sulfate.",
+    "reasoning": "Product B avoids SLS entirely, whereas Product A includes SLS in its formula."
+  },
+  {
+    "category": "shampoo",
+    "attribute": "quantified_damage_reduction_claim",
+    "question": "Which product provides a higher quantified hair damage reduction claim?",
+    "adversarial_value": "No specific percentage; claims \"Clinically Proven Healthier Hair with Every Wash\" and \"As Gentle As the Leading Sulphate-Free Shampoo.\"",
+    "normal_value": "Claims to stop 98% of daily hair damage (due to breakage vs. non-conditioning shampoo).",
+    "reasoning": "Product B offers a clear 98% damage-reduction figure, while Product A provides no quantified percentage."
+  },
+  {
+    "category": "tablet",
+    "attribute": "rear_camera_resolution",
+    "question": "Which product offers a higher rear camera resolution: the HiPad X Keyboard (Product A) or the iPad mini (Product B)?",
+    "adversarial_value": "No rear camera (keyboard accessory)",
+    "normal_value": "12MP Wide rear camera",
+    "reasoning": "iPad mini includes a 12MP Wide rear camera, while the HiPad X Keyboard is a keyboard accessory and has no camera, so iPad mini is clearly superior for rear camera resolution."
+  },
+  {
+    "category": "tablet",
+    "attribute": "video_recording_max_resolution",
+    "question": "Which product supports a higher maximum video recording resolution?",
+    "adversarial_value": "No video recording capability",
+    "normal_value": "4K video recording",
+    "reasoning": "iPad mini supports 4K video recording, whereas the HiPad X Keyboard is an accessory without any camera or video capability, making the iPad mini definitively better for video recording."
+  },
+  {
+    "category": "washing machine",
+    "attribute": "sanitize_allergen_cycle",
+    "question": "Which product includes a sanitize + allergen cycle for eliminating bacteria and allergens?",
+    "adversarial_value": "No sanitize or allergen cycle listed on the product page.",
+    "normal_value": "Yes — \"Sanitize + Allergen\" cycle (designed to kill dust mites and reduce 99% of common bacteria).",
+    "reasoning": "Product B explicitly offers a Sanitize + Allergen cycle, while Product A does not list such a cycle on its page."
+  },
+  {
+    "category": "washing machine",
+    "attribute": "automatic_detergent_dispensing",
+    "question": "Which product has automatic detergent dispensing?",
+    "adversarial_value": "No automatic detergent dispensing feature listed on the product page.",
+    "normal_value": "Yes — SmartDispense automatic detergent dosing.",
+    "reasoning": "Product B includes SmartDispense auto-dosing; Product A does not mention any automatic detergent dispensing."
+  }
+]

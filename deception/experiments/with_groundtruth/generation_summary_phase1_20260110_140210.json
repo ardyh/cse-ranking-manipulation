@@ -1,0 +1,23 @@
+{
+  "phase": 1,
+  "timestamp": "20260110_140210",
+  "total_pairs": 10,
+  "total_questions_generated": 10,
+  "total_experiments": 10,
+  "experiments_file": "experiments_with_gt_phase1_20260110_140210.json",
+  "questions_file": "generated_questions_phase1_20260110_140210.json",
+  "categories": [
+    "laptop",
+    "computer monitor",
+    "lipstick",
+    "washing machine",
+    "tablet",
+    "shampoo",
+    "blender",
+    "coffee maker",
+    "hair dryer",
+    "microwave oven"
+  ],
+  "judge_model": "gpt-5",
+  "questions_per_pair": 1
+}
